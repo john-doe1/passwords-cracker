@@ -1,4 +1,6 @@
 
+
+
 #up to 512 bit passcode must be cracked
 #all characters
 
@@ -20,26 +22,26 @@ passwfile = open(passwfile, "r")
 password = "placce_holder"
 
 
-def 16bitscreate():
-def 32bitscreate():
-def 64bitscreate():
-def 128bitscreate():
-def 256bitscreate():
-def 512bitscreate():
+def bitscreate16():
+def bitscreate32():
+def bitscreate64():
+def bitscreate128():
+def bitscreate256():
+def bitscreate512():
 
 
 if type_of_paswords = "16":
-  16bitscreate()
+  bitscreate16()
 elif type_of_paswords = "32":
-  32bitscreate()
+  bitscreate32()
 elif type_of_paswords = "64":
-  64bitscreate()
+  bitscreate64()
 elif type_of_paswords = "128":
-  128bitscreate()
+  bitscreate128()
 elif type_of_paswords = "256":
-  256bitscreate()
+  bitscreate256()
 elif type_of_paswords = "256":
-  512bitscreate()
+  bitscreate512()
 else:
   print "Error"
 
@@ -53,9 +55,3 @@ for password in passwfile:
     break;
   except smtplib.SMTPAuthenticationError:
     print "[!] Password Incorrect: %s" % password
-
-
-
-
-
-
