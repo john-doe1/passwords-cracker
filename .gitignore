@@ -79,11 +79,24 @@ import
 
 
 
-#type_of_site = raw_input("what type of site are you cracking?")
+#type_of_site = raw_input("what type of site are you cracking?"), no not doing that
 type_of_paswords = raw_input("number of bits in password? ie 16,32,64...512")
 type_of_site = raw_input("")
 type_of_site = raw_input("")
 
+
+if type_of_paswords = "16":
+#will go to a function
+elif type_of_paswords = "32":
+#will go to a function
+elif type_of_paswords = "64":
+#will go to a function
+elif type_of_paswords = "128":
+#will go to a function
+elif type_of_paswords = "256":
+#will go to a function
+elif type_of_paswords = "512":
+#will go to a function
 
 
 
