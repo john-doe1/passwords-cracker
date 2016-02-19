@@ -4,7 +4,11 @@
 import os
 import sys
 import random
-import smptlib
+import smtplib
+
+smtpserver = smtplib.SMTP("smtp.gmail.com", 587)
+smtpserver.ehlo()
+smtpserver.starttls()
 
 #options
 
