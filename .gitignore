@@ -79,6 +79,9 @@ type_of_paswords = raw_input("number of bits in password? ie: 16,32,64...512")
 while type_of_paswords != "16" and type_of_paswords != "32" and type_of_paswords != "64" and type_of_paswords != 128 and type_of_paswords != "256" and type_of_paswords != "512":
   type_of_paswords = raw_input("no you did it wrong, put a base two number between 16 and 512")
 
+password = "placce_holder"
+user = "place_holder"
+
 def 16bitscreate():
 def 32bitscreate():
 def 64bitscreate():
@@ -101,8 +104,7 @@ elif type_of_paswords = "256":
   512bitscreate()
 else:
   print "Error"
-
-
+  
 
 for password in passwfile:
   try:
