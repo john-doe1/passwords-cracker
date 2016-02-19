@@ -71,19 +71,12 @@ target/
 
 import os
 import sys
-import 
+import random
 
 
 
 
-
-
-
-#type_of_site = raw_input("what type of site are you cracking?"), no not doing that
-type_of_paswords = raw_input("number of bits in password? ie 16,32,64...512")
-type_of_site = raw_input("")
-type_of_site = raw_input("")
-
+type_of_paswords = raw_input("number of bits in password? ie: 16,32,64...512")
 
 if type_of_paswords = "16":
   #will go to a function
