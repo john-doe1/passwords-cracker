@@ -86,17 +86,19 @@ type_of_site = raw_input("")
 
 
 if type_of_paswords = "16":
-#will go to a function
+  #will go to a function
 elif type_of_paswords = "32":
-#will go to a function
+  #will go to a function
 elif type_of_paswords = "64":
-#will go to a function
+  #will go to a function
 elif type_of_paswords = "128":
-#will go to a function
+  #will go to a function
 elif type_of_paswords = "256":
-#will go to a function
-elif type_of_paswords = "512":
-#will go to a function
+  #will go to a function
+elif type_of_paswords = "256":
+  #will go to a function
+else:
+  print "Error"
 
 
 
